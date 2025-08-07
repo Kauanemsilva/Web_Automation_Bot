@@ -148,7 +148,7 @@ class MusicDeliveryAutomation:
                 await page.wait_for_load_state('networkidle')
                 await asyncio.sleep(1)
 
-                # Rola a página para baixo
+                # Rola a página para baix
                 await page.keyboard.press("End")
                 self.logger.info("🔽 Scroll até o final da página com tecla 'End'")
                 await asyncio.sleep(1)
