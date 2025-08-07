@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()
+import os
 import asyncio
 import pandas as pd
 from playwright.async_api import async_playwright
@@ -10,9 +13,10 @@ import os
 class MusicDeliveryAutomation:
     def __init__(self, excel_file_path):
         self.excel_file_path = excel_file_path
-        self.login_url = "http://sistema.musicdelivery.com.br/login?login_error"
-        self.email = "suporte@musicdelivery.com.br"
-        self.password = "Azul7979@"
+        self.login_url = os.getenv("MUSICDELIVERY_LOGIN_URL")
+        self.email = os.getenv("MUSICDELIVERY_EMAIL")
+        self.password = os.getenv("MUSICDELIVERY_PASSWORD")
+
         
         # Configuração do sistema de logging
         self.setup_logging()
