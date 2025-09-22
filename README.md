@@ -1,23 +1,24 @@
 # 🎼 Web Automation Bot
 
-Automação em Python com Playwright para acessar sistemas web, realizar login e executar ações automatizadas a partir de uma lista de links fornecida via planilha Excel.
+> Automação em Python com Playwright para acessar sistemas web, realizar login e executar ações automatizadas a partir de uma lista de links fornecida via planilha Excel.
 ---
 
 ## 📌 Funcionalidades
 
-✅ Login automatizado no sistema web
-📊 Leitura de links a partir de um arquivo Excel
-🖱️ Scroll automático na página
-🎯 Clique automatizado em botões específicos
-💬 Resposta automática a prompts do sistema
-📝 Logs detalhados de execução
-📊 Barra de progresso com TQDM
-📋 Relatório final de sucesso/falha
-🖼️ Screenshots automáticos em caso de erro
----
+✅ **Login automatizado** no sistema web  
+📊 **Leitura de links** a partir de um arquivo Excel  
+🖱️ **Scroll automático** na página  
+🎯 **Clique automatizado** em botões específicos  
+💬 **Resposta automática** a prompts do sistema  
+📝 **Logs detalhados** de execução  
+📊 **Barra de progresso** com TQDM  
+📋 **Relatório final** de sucesso/falha  
+🖼️ **Screenshots automáticos** em caso de erro  
 
 ## 📂 Estrutura do Projeto
 
+
+```
 web-automation/
 │
 ├── config_example.py         # Modelo de configuração sem dados sensíveis
