@@ -1,26 +1,24 @@
-# 🎼 Automation
+# 🎼 Web Automation Bot
 
-Automação em Python com Playwright para acessar o sistema [MusicDelivery], realizar login e confirmar o recebimento de parcelas a partir de uma lista de links fornecida via planilha Excel.
-
+Automação em Python com Playwright para acessar sistemas web, realizar login e executar ações automatizadas a partir de uma lista de links fornecida via planilha Excel.
 ---
 
 ## 📌 Funcionalidades
 
-- ✅ Login automatizado no sistema MusicDelivery
-- 📊 Leitura de links a partir de um arquivo Excel
-- 🖱️ Scroll automático na página
-- 🎯 Clique no botão "Confirmar Recebimento"
-- 💬 Resposta automática ao `prompt()` do sistema
-- 📝 Logs detalhados de execução
-- 📊 Barra de progresso com TQDM
-- 📋 Relatório final de sucesso/falha
-
+✅ Login automatizado no sistema web
+📊 Leitura de links a partir de um arquivo Excel
+🖱️ Scroll automático na página
+🎯 Clique automatizado em botões específicos
+💬 Resposta automática a prompts do sistema
+📝 Logs detalhados de execução
+📊 Barra de progresso com TQDM
+📋 Relatório final de sucesso/falha
+🖼️ Screenshots automáticos em caso de erro
 ---
 
 ## 📂 Estrutura do Projeto
 
-```bash
-musicdelivery-automation/
+web-automation/
 │
 ├── config_example.py         # Modelo de configuração sem dados sensíveis
 ├── script.py                 # Script principal da automação
@@ -29,6 +27,7 @@ musicdelivery-automation/
 ├── .gitignore                # Ignora arquivos sensíveis e temporários
 ├── logs/                     # Logs de execução
 ├── screenshots/              # Capturas de tela em caso de erro
+├── requirements.txt          # Dependências do projeto
 └── README.md                 # Este arquivo
 ```
 
@@ -48,8 +47,8 @@ musicdelivery-automation/
 
 ### 1. Clone o repositório
 ```bash
-git clone https://github.com/seu-usuario/musicdelivery-automation.git
-cd musicdelivery-automation
+git clone https://github.com/seu-usuario/web-automation.git
+cd web-automation
 ```
 
 ### 2. Crie e ative um ambiente virtual (opcional mas recomendado)
@@ -82,8 +81,9 @@ playwright install
 
 **Exemplo:**
 ```
-A1: http://sistema.com.br/parcela/123
-
+A1: https://sistema.com/acao/123
+A2: https://sistema.com/acao/456
+A3: https://sistema.com/acao/789
 ```
 
 ---
@@ -187,7 +187,7 @@ Este projeto é **privado** e voltado para uso interno. Para obter permissão de
 
 ## 👨‍💻 Autor
 
-**Desenvolvido por**: Suporte Técnico  
+**Desenvolvido por**:kauane silva   
 
 
 --
